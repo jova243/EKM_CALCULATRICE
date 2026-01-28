@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+    background:#0e0e0e;
+    padding-top:75px;
+    display:flex;
+    justify-content:center;
+}
+
+.app-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    text-align:center;
+    background:#000;
+    color:#fff;
+    font-size:1.5rem;
+    font-weight:bold;
+    padding:16px 10px;
+    letter-spacing:2px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    z-index:1000;
+}
+
+
+.calculator{
+    width:100%;
+    max-width:430px;
+    padding:12px;
+}
+
+
+.screen{
+    background:#f4f7f9;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:12px;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+}
+.mode{
+    font-size:0.9rem;
+    color:#444;
+    margin-bottom:10px;
+}
+
+.screen input{
+    width:100%;
+    border:none;
+    background:transparent;
+    font-size:2.2rem;
+    text-align:right;
+    color:#000;
+    outline:none;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:6px;
+    margin-bottom:6px;
+}
+
+
+button{
+    padding:15px 5px;
+    font-size:0.9rem;
+    border:none;
+    border-radius:6px;
+    background:#1a1a1a;
+    color:white;
+    cursor:pointer;
+    transition:0.15s;
+}
+
+button:active{
+    transform:scale(0.95);
+}
+
+.opr{
+    background:#d3d6db;
+    color:#000;
+    font-weight:bold;
+}
+
+
+#eqBtn{
+    background:#4caf50;
+    color:white;
+    font-weight:bold;
+}
+
+
+@media (min-width:600px){
+    .calculator{
+        max-width:520px;
+    
+    }
+    button{
+        padding:17px;
+        font-size:1rem;
+    }
+}
+
+
+@media (min-width:992px){
+    .calculator{
+        max-width:650px;
+    
+    }
+
+    .screen input{
+        font-size:2.5rem;
+    }
+
+    button{
+        padding:20px;
+        font-size:1.1rem;
+    }
+}
