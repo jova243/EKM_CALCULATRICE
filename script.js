@@ -157,7 +157,7 @@ buttons.forEach(btn => {
                 input.value = "0";
                 break;
 
-            case "DEL":
+            case "SUP":
                 expression = expression.slice(0, -1);
                 input.value = expression || "0";
                 break;
@@ -298,4 +298,5 @@ buttons.forEach(btn => {
                 }
         }
     });
+
 });
