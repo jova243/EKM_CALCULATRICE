@@ -187,15 +187,16 @@ buttons.forEach(btn => {
                 break;
 
             case "x²":
-                if (expression) {
-                    if (/[\d)]$/.test(expression)) {
-                        expression += "²";
-                    } else {
-                        expression = `(${expression})²`;
-                    }
-                    input.value = expression;
-                }
-                break;
+    if (expression) {
+        if (/[\d)]$/.test(expression)) {
+            expression += "**2";
+        } else {
+            expression = `(${expression})**2`;
+        }
+        input.value = expression;
+    }
+    break;
+
 
             case "xʸ":
                 expression += "^";
@@ -300,3 +301,4 @@ buttons.forEach(btn => {
     });
 
 });
+
